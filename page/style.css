@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: lavender;
+}
+
+.MainText {
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	position: absolute;
+	top: 34%;
+	bottom:50%;
+	font-size: 40px;
+	text-align: center;
+}
+
+.SecondTextContainer {
+	position: absolute;
+	text-align: center;
+	top: 54%;
+	font-weight: 600;
+	font-family: "Roboto", sans-serif;
+	left: 0%;
+	right: 0%;
+	text-decoration: none;
+	color: black;
+}
+
+.SecondTextContainer a {
+	text-decoration: none;
+	color: black;
+	font-family: "Ubuntu Mono";
+}
+
+.SecondTextContainer p {
+	padding: 4px;
+}
+
+/* Mobile */
+@media (max-width: 414px){
+body {
+	width: 1%;
+}
+
+.SecondTextContainer {
+	position: absolute;
+	text-align: center;
+	top: 18%;
+	font-weight: 600;
+	font-family: "Roboto", sans-serif;
+	left: 0%;
+	right: 0%;
+	text-decoration: none;
+	color: black;
+	width: 50%;
+}
+
+.SecondText p {
+	width: 100vw;
+}
+
+.MainText {
+	position: absolute;
+	top: 10%;
+}
+}
