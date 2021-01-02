@@ -14,9 +14,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 600;
 	position: absolute;
-	top: 34%;
-	bottom:50%;
-	font-size: 40px;
+	top: 28%;
+	bottom: 50%;
+	font-size: 80px;
 	text-align: center;
 }
 
@@ -30,6 +30,11 @@ body {
 	right: 0%;
 	text-decoration: none;
 	color: black;
+	background-color: #cae4db;
+	width: 600px;
+	padding: 14px 14px;
+	border: 0.1em solid black;
+	margin: 0% auto;
 }
 
 .SecondTextContainer a {

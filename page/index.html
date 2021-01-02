@@ -10,11 +10,14 @@
 	<link rel="stylesheet" href="style.css">
 	<!-- Scripts -->
 	<script src="../index.js"></script>
+	<script>
+		document.getElementById("MainText").innerHTML = "IsVeganAPI";
+	</script>
 </head>
 
 
 <body>
-	<p class="MainText">IsVeganAPI</p>
+	<p class="MainText" id="MainText">IsVeganAPI</p>
 	<div class="SecondTextContainer">
 		<p class="SecondText">Example: <a href="/api/IsVeganCheckIngredients?ingredients=milk" target="_blank">https://localhost:3000/api/IsVeganCheckIngredients?ingredients=milk</a></p>
 		<p>or</p>

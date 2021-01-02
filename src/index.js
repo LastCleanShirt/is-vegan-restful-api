@@ -9,11 +9,11 @@ app.use(express.static(__dirname + "/"));
 app.engine("html", require("ejs").renderFile);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view options", {layout: false});
-app.use(express.static(__dirname + "/page/"));
-app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/../page/"));
+app.set("view engine", "html");
 app.set("views", __dirname)
 
-const IsVeganAPI = "Bruh"
+const title = "IsVeganAPI"
 
 const readInterface = readline.createInterface({
 	input: fs.createReadStream("page/index.html"),
@@ -22,7 +22,7 @@ const readInterface = readline.createInterface({
 })
 
 app.get("/", (req, res, next) => {
-	res.render("/page/index.html", {title: "IsVeganApi", message: "Bruh"});
+	res.render(__dirname + "/page/index.html", {title: title});
 })
 
 app.get("/api/isVeganCheckIngredients", (req, res) => {
